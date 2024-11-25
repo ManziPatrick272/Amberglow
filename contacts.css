@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9; 
+    color: #333; 
+    line-height: 1.6;
+}
+
+h1, h2 {
+    color: gray; 
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5em;
+    margin-top: 40px;
+}
+
+header {
+    padding: 20px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: rgb(241, 238, 238); 
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: plum; 
+}
+
+.contact-info {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color:wheat;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info p {
+    font-size: 1.2em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: gray;
+}
+
+.contact-info ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    margin: 15px 0;
+    font-size: 1.1em;
+}
+
+.contact-info ul li a {
+    color: gray;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-info ul li a:hover {
+    color: lightgrey;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+form input,
+form textarea {
+    padding: 12px;
+    font-size: 1.1em;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: purple; 
+    color: white;
+    font-size: 1.2em;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    width: 200px;
+    align-self: center;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #ab47bc; 
+}
+
+footer {
+    background-color: #f3e5f5;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 0.9em;
+    color: #666;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
